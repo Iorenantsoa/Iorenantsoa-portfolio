@@ -3,18 +3,35 @@ import React, { useState } from 'react'
 import {
   FaHtml5,
   FaCss3,
-  FaJs,
   FaReact,
-  FaWordpress,
+  FaNode,
   FaFigma,
+  FaGithub,
+  FaGitAlt,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiNestjs,
+  SiKotlin,
+  SiExpo,
+  SiSymfony,
+  SiNumpy,
+  SiPython,
+  SiScikitlearn,
+  SiTensorflow,
+  SiKeras,
+  SiPandas,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
+  SiSqlite
 } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+import { TbBrandReactNative } from "react-icons/tb";
+import { RiJavascriptFill } from "react-icons/ri";
 
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
@@ -30,12 +47,46 @@ export const aboutData = [
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
-          <FaJs />,
+          <RiJavascriptFill />,
+          <BiLogoTypescript />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaNode />,
+          <SiNestjs />,
+          <SiSymfony />,
+
         ],
+
+      },
+      {
+        title: 'Mobile Development',
+        icons: [
+          <SiKotlin />,
+          <TbBrandReactNative />,
+          <SiExpo />,
+
+        ],
+      },
+      {
+        title: 'Artificial Intelligence (AI)',
+        icons: [
+          <SiPython />,
+          <SiNumpy />,
+          <SiPandas />,
+          <SiScikitlearn />,
+          <SiTensorflow />,
+          <SiKeras />,
+
+        ],
+      },
+
+      {
+        title: 'Databases',
+        icons: [<SiSqlite />, <SiPostgresql />, <SiMongodb />, <SiMysql />,],
+      },
+      {
+        title: 'Version Control',
+        icons: [<FaGitAlt />, <FaGithub />],
       },
       {
         title: 'UI/UX Design',
@@ -43,50 +94,44 @@ export const aboutData = [
       },
     ],
   },
-  {
-    title: 'awards',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
-    ],
-  },
+
   {
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Bachelor’s Project - IES-AV (Institut d’Enseignement Supérieur d’Antsirabe Vakinankaratra)',
+        school: 'Developed an image classification model to detect kidney diseases using Convolutional Neural Networks (CNNs).',
+        stage: 'july 2023',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Intern Developer - Paositra Malagasy',
+        school: 'Worked on internal projects to enhance company processes.',
+        stage: 'august 2022 - november 2022',
       },
     ],
   },
   {
-    title: 'credentials',
+    title: 'formations & credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'First Year of Master’s in Software Engineering (M1)  ',
+        school: 'IES-AV (Institut d’Enseignement Supérieur d’Antsirabe Vakinankaratra)',
+        stage: '2024',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Maintenance and Networks',
+        school: "Nir’Info",
+        stage: '2023',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Third Year of Bachelor’s in Software Engineering (L3)',
+        school: 'IES-AV (Institut d’Enseignement Supérieur d’Antsirabe Vakinankaratra)',
+        stage: '2023',
+      },
+      {
+        title: 'Baccalaureate Series D ',
+        school: 'Lycée Sainte Famille Anosivavaka Ambohimanarina',
+        stage: '2018',
       },
     ],
   },
@@ -98,11 +143,10 @@ import CountUp from 'react-countup';
 
 
 const About = () => {
-  const [index, setIndex] = useState(0)
-  console.log(index)
+  const [index, setIndex] = useState(0) 
 
   return (
-    <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+    <div className='h-full bg-primary/30 py-32  text-center xl:text-left'>
       <Circles />
       {/* Avatar image */}
       <motion.div
@@ -110,20 +154,21 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]">
+        className="hidden xl:flex absolute bottom-0 -left-[370px] ">
         <Avatar />
       </motion.div>
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
 
         {/* text */}
-        <div className='flex-1 flex flex-col justify-center'>
-          <motion.h2 className='h2'
+        <div className='flex-1 flex flex-col justify-center z-30'>
+          <motion.h2 className='h2 md:text-4xl xl:text-4xl '
             variants={fadeIn('right', 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-          >Captivating <span className='text-accent'>stories</span>birth magnificent designs
+          >
 
+            Passionate <br /> <span className='text-accent'>JavaScript </span> &  <span className='text-accent'> TypeScript</span><br /> Developer
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -131,7 +176,7 @@ const About = () => {
             animate="show"
             exit="hidden"
             className='max-w-[500] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-            10 years ago, Ibegan freelancing as a developer, Since then, I{"'"}ve done remote work for agencies, counsulted for startups, andd collaborated on digitalproducts for busines and consumer use.
+            As a JavaScript and TypeScript developer, I focus on creating functional and elegant web solutions. My professional and innovative approach aims to meet client needs while ensuring the performance and reliability of applications.
           </motion.p>
           {/* counter */}
           <motion.div
@@ -141,36 +186,30 @@ const About = () => {
             exit="hidden"
             className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0'>
             <div className='flex flex-1 xl:gap-x-6'>
-              {/* experience */}
+              {/* Experience */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={10} duration={5} />+
+                  <CountUp start={0} end={4} duration={7} />
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Years of experience</div>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Years of Study</div>
               </div>
-              {/* clients */}
+              {/* Clients */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={250} duration={5} />+
+                  <CountUp start={0} end={10} duration={7} />+
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Stisfied clients</div>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Projects</div>
               </div>
-              {/* projects */}
+              {/* Projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={650} duration={5} />+
+                  <CountUp start={0} end={8} duration={7} />+
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Finished projects</div>
-              </div>
-              {/* awards */}
-              <div className='relative flex-1  '>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={8} duration={5} />+
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Winning awards</div>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Completed Projects</div>
               </div>
             </div>
           </motion.div>
+
 
 
         </div>
@@ -190,9 +229,9 @@ const About = () => {
                 return (
                   <div
                     key={itemIndex}
-                    className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'}
-                     cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px]
-                      after:bg-white after:absolute after:-bottom-1 after:left-0 z-10`}
+                    className={`cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px]
+                       after:absolute after:-bottom-1 after:left-0 z-10 ${index === itemIndex ? 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300' : 'after:bg-white'}
+                     `}
                     onClick={() => setIndex(itemIndex)}
                   >
                     {item.title}
@@ -207,11 +246,18 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
-                  className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
+                  className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center   text-white/85 my-2'
                 >
-                  <div className="font-light mb-2 md:mb-0 ">{item.title}</div>
-                  <div className='hidden md:flex'>-</div>
-                  <div>{item.stage}</div>
+                  <div className='flex justify-between '>
+                    <div >
+                      <div className="font-light mb-2 md:mb-0 md:mr-8 ">{item.stage && `( ${item.stage} )`} {item.title}</div>
+                      <div className="mb-2 md:mb-0 md:mr-8 font-thin text-sm ">{item.school}</div>
+                    </div>
+                    {/* <div className='flex items-center '>
+                      <div className='hidden md:flex '>-</div>
+                      <div className='font-thin text-sm '>{item.stage}</div>
+                    </div> */}
+                  </div>
                   <div className='flex gap-x-4'>
                     {item.icons?.map((icon, itemIndex) => {
                       return <div className='text-2xl text-white' key={itemIndex}> {icon}</div>

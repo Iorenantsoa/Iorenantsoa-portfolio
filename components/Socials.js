@@ -1,42 +1,31 @@
 import Link from "next/link";
+ 
+import { RiLinkedinBoxFill, RiGithubFill, RiFacebookFill, RiInstagramFill } from 'react-icons/ri';
 
-// import {RiYoutubeLine , RiInstagramLine , RiFacebookLine , RiDribbleLine,RiBehanceLine, RiPinterestLine} from 'react-icons/ri'
-import { RiYoutubeLine, RiInstagramLine, RiFacebookLine, RiDribbbleLine, RiBehanceLine, RiPinterestLine } from 'react-icons/ri';
-
-
+import { 
+    HiEnvelope,
+  } from 'react-icons/hi2';
+  
 const Socials = () => {
-  return <div className=" flex items-center gap-x-5 text-lg">
-    <Link href={''} className="hover:text-accent transition-all duration-300">
-        <RiYoutubeLine/>
-    </Link>
+    return <div className=" flex items-center gap-x-5 text-lg">
+        <Link href={''} className="hover:text-accent transition-all duration-300">
+            <RiGithubFill />
+        </Link>
+        <Link href={''} className="hover:text-accent transition-all duration-300">
+            <HiEnvelope /> 
+        </Link>
+        <Link href={''} className="hover:text-accent transition-all duration-300"> 
+            <RiLinkedinBoxFill />
+        </Link>
+        <Link href={''} className="hover:text-accent transition-all duration-300">
+            <RiFacebookFill/>
+        </Link>
+        <Link href={''} className="hover:text-accent transition-all duration-300">
+            <RiInstagramFill />
+        </Link>
 
 
-    <Link href={''} className="hover:text-accent transition-all duration-300">
-        <RiInstagramLine/>
-    </Link>
-
-    <Link href={''} className="hover:text-accent transition-all duration-300">
-        <RiYoutubeLine/>
-    </Link>
-
-    <Link href={''} className="hover:text-accent transition-all duration-300">
-        <RiFacebookLine/>
-    </Link>
-
-    <Link href={''} className="hover:text-accent transition-all duration-300">
-        <RiDribbbleLine/>
-    </Link>
-
-    <Link href={''} className="hover:text-accent transition-all duration-300">
-        <RiBehanceLine/>
-    </Link>
-
-    <Link href={''} className="hover:text-accent transition-all duration-300">
-        <RiPinterestLine/>
-    </Link>
-
-
-  </div>;
+    </div>;
 };
 
 export default Socials;

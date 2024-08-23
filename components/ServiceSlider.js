@@ -8,6 +8,7 @@ import {
   RxRocket,
   RxArrowTopRight
 } from "react-icons/rx";
+import { FaChartLine } from "react-icons/fa6";
 
 
 // data
@@ -15,27 +16,32 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Development of a unique visual identity to reflect specific values and goals..',
   },
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Designing modern and intuitive interfaces for an optimal user experience.',
   },
   {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Developing high-performance and secure websites and mobile applications.',
+  },
+  {
+    icon: <FaChartLine /> ,
+    title: 'Data Analysis & reporting ',
+    description: 'Detailed data analysis and reporting to drive informed decisions.',
   },
   {
     icon: <RxReader />,
     title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Crafting relevant and optimized content to capture and retain users\' attention.',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Search engine optimization to enhance online visibility.',
   },
 ];
 
@@ -66,12 +72,12 @@ const ServiceSlider = () => {
         clickable: true
       }}
       modules={[FreeMode, Pagination]}
-      className='h-[240px] sm:h-[340px]'
+      className='h-[300px] sm:h-[340px] '
     >
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
+            <div className='bg-[rgba(65,47,123,0.15)] min-h-[250px] md:min-h-[315px] mb-3 rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
               {/* icon */}
               <div className='text-4xl text-accent mb-4'>{item.icon}</div>
               {/* title and desc */}

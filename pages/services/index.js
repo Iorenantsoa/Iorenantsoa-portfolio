@@ -33,7 +33,7 @@ const Services = () => {
               animate="show"
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.Itaque nostrum quam reprehenderit vero, tenetur voluptatem nulla aut aspernatur dores ut.
+              I provide software development services focused on quality and innovation, creating robust web, mobile, and digital solutions tailored to the specific needs of clients.
             </motion.p>
           </div>
 

@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 import ParticlesContainer from '../components/ParticlesContainer'
 import ProjectsBtn from '../components/ProjectsBtn'
@@ -17,10 +16,10 @@ const Home = () => {
             initial='hidden'
             animate="show"
             exit="hidden"
-            className="h1"
+            className=" h2"
           >
-            Transforming Ideas <br /> Into {' '}
-            <span className="text-accent">Digital Reality</span>
+            Let{"'"}s Coding  <br /> the Future,
+            <span className="text-accent ">Today</span>
           </motion.h1>
 
           <motion.p
@@ -28,9 +27,10 @@ const Home = () => {
             initial='hidden'
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16  " //text-slate-300
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.Itaque nostrum quam reprehenderit vero, tenetur voluptatem nulla aut aspernatur dores ut.
+            I build dynamic web applications with JavaScript and TypeScript, combining creativity and technology to create impactful digital solutions. Let{"'"}s turn your ideas into reality!
+
           </motion.p>
 
           <div className="flex justify-center xl:hidden relative">
@@ -51,13 +51,14 @@ const Home = () => {
       </div>
 
       {/* image */}
-      <div className="w-[1200px] h-full absolute right-0 bottom-0">
+      <div className="w-full h-full absolute right-0 bottom-0">
+        {/* <div className="w-[1200px] h-full absolute right-0 bottom-0"> */}
         {/* bg img */}
-        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
+        <div className="bg-none xl:bg-explosion xl:bg-contain xl:bg-right xl:bg-no-repeat w-full h-full absolute  right-0 mix-blend-color-dodge translate-z-0">
         </div>
         {/* particle */}
-        <div>
-          <ParticlesContainer/>
+        <div className="w-[1000px] h-full absolute right-0">
+          <ParticlesContainer />
         </div>
 
         {/* avatar */}
@@ -67,7 +68,7 @@ const Home = () => {
           initial='hidden'
           animate="show"
           exit="hidden"
-          transition = {{duration : 1 , ease:'easeInOut'}}
+          transition={{ duration: 1, ease: 'easeInOut' }}
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 right-[8%]"
         >
           <Avatar />
