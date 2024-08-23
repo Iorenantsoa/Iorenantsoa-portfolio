@@ -4,41 +4,44 @@ const workSlides = {
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb1.jpg',
+          title: 'TutoForYou',
+          path: '/TutoForYou.jpg',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/RenalScanAI.jpg',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/Gstage.jpg',
         },
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/gasyCarImage.jpg',
         },
+        
+        
       ],
     },
     {
       images: [
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/G-permiConstruire4.jpg',
         },
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/NybaibolikoImage.jpg',
         },
-        {
-          title: 'title',
-          path: '/thumb2.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb3.jpg',
-        },
+        
+        // {
+        //   title: 'title',
+        //   path: '/thumb2.jpg',
+        // },
+        // {
+        //   title: 'title',
+        //   path: '/thumb3.jpg',
+        // },
       ],
     },
   ],
@@ -95,6 +98,7 @@ const WorkSlider = () => {
                         </div>
                         {/* title */}
                         <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
+                          
                           <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
                             {/* title part 1 */}
                             <div className='delay-100'>LIVE</div>

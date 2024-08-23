@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full">
+    <div className="bg-primary/60 h-full  ">
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           <motion.h1
@@ -16,7 +16,7 @@ const Home = () => {
             initial='hidden'
             animate="show"
             exit="hidden"
-            className=" h2"
+            className=" h2 "
           >
             Let{"'"}s Coding  <br /> the Future,
             <span className="text-accent ">Today</span>
@@ -27,13 +27,12 @@ const Home = () => {
             initial='hidden'
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16  " //text-slate-300
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16  " //text-slate-700
           >
-            I build dynamic web applications with JavaScript and TypeScript, combining creativity and technology to create impactful digital solutions. Let{"'"}s turn your ideas into reality!
-
+            I’m Ratsimbazafy Iorenantsoa Cédric Antsamalala, a junior developer specializing in crafting web and mobile applications. I focus on delivering creative and efficient solutions to help bring your vision to life.
           </motion.p>
 
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative ">
             <ProjectsBtn />
           </div>
           <motion.div
@@ -41,13 +40,11 @@ const Home = () => {
             initial='hidden'
             animate="show"
             exit="hidden"
-            className="hidden xl:flex"
-
+            className="hidden xl:flex "
           >
             <ProjectsBtn />
           </motion.div>
         </div>
-
       </div>
 
       {/* image */}
