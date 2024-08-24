@@ -11,11 +11,11 @@ import { fadeIn } from '../../variants'
 
 const Work = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center  ">
-      <Circles />
+    <div className="h-full bg-primary/30  flex items-start py-36">
+      {/* <Circles /> */}
 
-      <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-x-8">
+      <div className="container mx-auto ">
+        <div className="flex flex-col xl:flex-row gap-x-8 ">
           {/* text */}
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
             <motion.h2
@@ -23,7 +23,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2  "
+              className="h2   "
             >
               My works <span className="text-accent">.</span>
             </motion.h2>
@@ -49,7 +49,7 @@ const Work = () => {
 
         </div>
       </div>
-      <Bulb />
+      {/* <Bulb /> */}
     </div>
   )
 };

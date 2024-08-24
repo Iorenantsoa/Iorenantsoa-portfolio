@@ -6,19 +6,20 @@ import Socials from '../components/Socials'
 const Header = () => {
   return (
     <header
-      className="sm:absolute  z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px] "
+      className=" absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px] py-6 bg-[#0D1117] shadow-sm shadow-black"
     >
       <div className='container mx-auto'>
-          <div className="flex flex-col md:flex-row justify-between items-center gap-y-6 py-8 ">
-            {/* logo */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-y-6  ">
+          {/* logo */}
           <Link href={'/'}>
-            <Image src={'logo.svg'} width={220} height={48} alt="logo" priority = {true}/>
+            <Image src={'logo.svg'} width={220} height={48} alt="logo" priority={true} />
           </Link>
           {/* socials */}
-          <Socials/>
-          </div>
+          <Socials />
+        </div>
       </div>
-    </header>);
+    </header>
+  );
 };
 
 export default Header;

@@ -12,12 +12,15 @@ import Header from '../components/Header'
 import TopLeftImg from '../components/TopLeftImg'
 const Layout = ({ children }) => {
   return (
-    
-    <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`} >
-      <TopLeftImg />
+
+    <div className={`page   text-[#111827] bg-cover  bg-repeat  ${sora.variable} font-sora relative `} >
+      {/* <TopLeftImg /> */}
       <Nav />
-      <Header />
-      {children}
+      {/* <div className='flex flex-col justify-between items-center'> */}
+        <Header />
+        {children}
+      {/* </div> */}
+
     </div>
   )
 };

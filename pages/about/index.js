@@ -54,9 +54,7 @@ export const aboutData = [
           <FaNode />,
           <SiNestjs />,
           <SiSymfony />,
-
         ],
-
       },
       {
         title: 'Mobile Development',
@@ -96,7 +94,7 @@ export const aboutData = [
   },
 
   {
-    title: 'experience',
+    title: 'experiences',
     info: [
       {
         title: 'Bachelor’s Project - IES-AV (Institut d’Enseignement Supérieur d’Antsirabe Vakinankaratra)',
@@ -143,25 +141,27 @@ import CountUp from 'react-countup';
 
 
 const About = () => {
-  const [index, setIndex] = useState(0) 
+  const [index, setIndex] = useState(0)
 
   return (
-    <div className='h-full bg-primary/30  py-10  text-center xl:text-left  '>
-      <Circles />
+    <div className=' max-w-full h-full  xl:text-left  py-36 '>
+      {/* <Circles /> */}
       {/* Avatar image */}
       <motion.div
         variants={fadeIn('right', 0.2)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px] ">
+        className="hidden xl:flex absolute bottom-0 -left-[370px]  ">
         <Avatar />
       </motion.div>
-      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
+      <div className='container mx-auto h-full flex flex-col items-start  xl:flex-row gap-x-6  bg-blue-300' >
 
         {/* text */}
-        <div className='flex-1 flex flex-col justify-center z-30'>
-          <motion.h2 className='h2 md:text-4xl xl:text-4xl '
+        <div className='flex-1 flex flex-col justify-start z-30 text-center md:text-left '>
+
+
+          <motion.h2 className='h2  text-2xl md:text-4xl xl:text-4xl text-[#121212] '
             variants={fadeIn('right', 0.2)}
             initial="hidden"
             animate="show"
@@ -175,7 +175,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className='max-w-[500] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
+            className='text-sm md:text-[15px] font-normal  text-justify   md:text-left max-w-[500] mx-auto xl:mx-0 mb-6 xl:mb-12  xl:px-0    '>
             As a JavaScript and TypeScript developer, I focus on creating functional and elegant web solutions. My professional and innovative approach aims to meet client needs while ensuring the performance and reliability of applications.
           </motion.p>
           {/* counter */}
@@ -184,35 +184,34 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0'>
+            className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-10'>
             <div className='flex flex-1 xl:gap-x-6'>
               {/* Experience */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 pr-5'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={4} duration={7} />
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Years of Study</div>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-[#121212] font-bold'>Years of Study</div>
               </div>
               {/* Clients */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 px-5'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={10} duration={7} />+
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Projects</div>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-[#121212] font-bold'>Projects</div>
               </div>
               {/* Projects */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 px-5'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={8} duration={7} />+
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Completed Projects</div>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-[#121212] font-bold'>Completed Projects</div>
               </div>
             </div>
           </motion.div>
+        </div> 
 
-
-
-        </div>
+        {/* //////////////////////////////////////////////// */}
 
 
         {/* info */}
@@ -221,16 +220,16 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
+          className='flex flex-col  xl:max-w-[48%]  bg-red-600 '>
 
-          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
+          <div className='flex gap-x-4 xl:gap-x-8  xl:mx-0  '>
             {
               aboutData.map((item, itemIndex) => {
                 return (
                   <div
                     key={itemIndex}
-                    className={`cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px]
-                       after:absolute after:-bottom-1 after:left-0 z-10 ${index === itemIndex ? 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300' : 'after:bg-white'}
+                    className={`cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[3px]
+                       after:absolute after:-bottom-1 after:left-0 z-10 font-semibold t ${index === itemIndex ? 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300' : 'after:bg-[#121212] text-[#121212]'}
                      `}
                     onClick={() => setIndex(itemIndex)}
                   >
@@ -241,26 +240,28 @@ const About = () => {
             }
           </div>
 
-          <div className=' py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
+          <div className=' py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-start xl:items-start  xl:mx-0  '>
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
-                  className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center   text-white/85 my-2'
+                  className='flex-1 flex flex-col md:flex-row   gap-x-2   text-[#121212] my-1'
                 >
-                  <div className='flex justify-between '>
-                    <div >
-                      <div className="font-light mb-2 md:mb-0 md:mr-8 ">{item.stage && `( ${item.stage} )`} {item.title}</div>
-                      <div className="mb-2 md:mb-0 md:mr-8 font-thin text-sm ">{item.school}</div>
+                  <div className='flex justify-start '>
+                    <div className=' '>
+                      <div className="font-medium   md:mb-0 md:mr-8">{item.stage && `( ${item.stage} )`} {item.title}</div>
+                      <div className="mb-2 md:mb-0 md:mr-8   font-extralight text-sm text-[#222222] ">
+                        {item.school} <br />
+                      </div>
                     </div>
-                    {/* <div className='flex items-center '>
-                      <div className='hidden md:flex '>-</div>
-                      <div className='font-thin text-sm '>{item.stage}</div>
-                    </div> */}
                   </div>
-                  <div className='flex gap-x-4'>
+                  <div className='flex gap-x-4 flex-wrap'>
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className='text-2xl text-white' key={itemIndex}> {icon}</div>
+                      return (
+                        <div className='text-2xl text-[#31353b]' key={itemIndex}>
+                          {icon}
+                        </div>
+                      )
                     })}
                   </div>
                 </div>
