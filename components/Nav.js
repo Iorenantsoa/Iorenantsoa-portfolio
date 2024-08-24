@@ -42,14 +42,14 @@ const Nav = () => {
         {navData.map((link, index) => {
           return (
             <Link
-              className={`${link.path === pathname ? 'text-accent':'text-[#C9D1D9]'} relative flex items-center group hover:text-accent transition-all duration-300`}
+              className={`${link.path === pathname ? 'text-accent':'text-[#F1F1F1]'} relative flex items-center group hover:text-accent transition-all duration-300`}
               href={link.path}
               key={index}
             >
               {/** tooltip*/}
               <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
                 <div className='bg-[#0D1117] relative flex text-primary items-center p-[6px]'>
-                  <div className='text-[12px] leading-none font-semibold capitalize text-[#C9D1D9] my-2'>
+                  <div className='text-[12px] leading-none font-semibold capitalize text-[#F1F1F1] my-2'>
                     {link.name}
                   </div>
                   {/* triangle */}

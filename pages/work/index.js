@@ -11,7 +11,7 @@ import { fadeIn } from '../../variants'
 
 const Work = () => {
   return (
-    <div className="h-full bg-primary/30  flex items-start py-36">
+    <div className="h-full  flex items-center py-36">
       {/* <Circles /> */}
 
       <div className="container mx-auto ">
@@ -23,7 +23,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2   "
+              className="h2 "
             >
               My works <span className="text-accent">.</span>
             </motion.h2>

@@ -11,7 +11,7 @@ import { fadeIn } from '../../variants'
 
 const Services = () => {
   return (
-    <div className="h-full  flex items-start py-36 ">
+    <div className="h-full  flex items-center py-36 ">
       {/* <Circles /> */}
 
       <div className="container mx-auto">
@@ -23,7 +23,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2   "
+              className="h2 "
             >
               My services <span className="text-accent">.</span>
             </motion.h2>
@@ -32,7 +32,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0">
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 ">
               I provide software development services focused on quality and innovation, creating robust web, mobile, and digital solutions tailored to the specific needs of clients.
             </motion.p>
           </div>

@@ -29,8 +29,8 @@ const serviceData = [
     description: 'Developing high-performance and secure websites and mobile applications.',
   },
   {
-    icon: <FaChartLine /> ,
-    title: 'Data Analysis & reporting ',
+    icon: <FaChartLine />,
+    title: 'Data Analysis',
     description: 'Detailed data analysis and reporting to drive informed decisions.',
   },
   {
@@ -77,20 +77,23 @@ const ServiceSlider = () => {
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-             <div className='z-20 bg-[#0F0F0F] min-h-[250px] md:min-h-[315px] mb-3 rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
-              {/* icon */}
-              <div className='text-4xl text-accent mb-4'>{item.icon}</div>
-              {/* title and desc */}
-              <div className='mb-8'>
-                <div className='mb-2 text-lg text-accent font-medium'>{item.title}</div>
-                <p className='max-w-[350px] leading-normal text-[#F5F5F5]'>
-                  {item.description}
-                </p>
-              </div>
-              {/* arrow */}
-              <div className='text-3xl'>
-                <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300 text-[#F5F5F5]' />
-              </div>
+            <div className='z-20 bg-[#2e2d2d]  md:min-h-[300px] md:max-h-[300px] mb-3 rounded-lg px-6 py-8 flex  sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[#424040] transition-all duration-300'>
+              
+                {/* icon */}
+                <div className='text-4xl text-accent mb-4'>
+                  {item.icon}
+                </div>
+                {/* title and desc */}
+                <div className='mb-8'>
+                  <div className='mb-2 text-lg text-accent font-semibold'>{item.title}</div>
+                  <p className='max-w-[250px] leading-normal  text-sm text-[#F5F5F5] font-light'>
+                    {item.description}
+                  </p>
+                </div>
+                {/* arrow */}
+                <div className='text-3xl '>
+                  <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300 text-[#F5F5F5]' />
+                </div>
             </div>
           </SwiperSlide>
         )
