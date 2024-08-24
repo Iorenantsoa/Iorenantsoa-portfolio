@@ -56,11 +56,11 @@ const Home = () => {
         right-0 mix-blend-color-dodge translate-z-0"> */}
         </div>
         {/* particle */}
-        <div className="xl:w-[50%] h-full absolute right-0 "> 
+        <div className="xl:w-[50%]  h-full absolute right-0 "> 
           <ParticlesContainer />
         </div>
 
-        {/* avatar */}
+        {/* avatarr */}
 
         {/* <motion.div
           variants={fadeIn('left', 0.5)}
