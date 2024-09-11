@@ -6,7 +6,7 @@ import Socials from '../components/Socials'
 const Header = () => {
   return (
     <header
-      className=" absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px] py-6 bg-[#0D1117] shadow-sm "
+      className=" absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px] py-6 bg-[#0D1117] shadow-sm shadow-slate-50 "
       // className=" absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px] py-6 bg-[#0D1117] shadow-sm shadow-black"
     >
       <div className='container mx-auto'>

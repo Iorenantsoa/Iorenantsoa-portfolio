@@ -51,7 +51,7 @@ const ParticlesContainer = () => {
             value: '#F9F9F9' // Change the color of the particles
           },
           links: {
-            color: '#000000',
+            color: "transparent",
             distance: 150,
             enable: true,
             opacity: 0.5,

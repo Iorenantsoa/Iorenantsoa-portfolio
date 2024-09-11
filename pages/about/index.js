@@ -146,7 +146,7 @@ const About = () => {
   const [index, setIndex] = useState(0)
 
   return (
-    <div className='h-full   py-36  text-center xl:text-left  '> 
+    <div className='h-full   py-36  text-center xl:text-left  '>
       {/* Avatar image */}
       <motion.div
         variants={fadeIn('right', 0.2)}
@@ -168,7 +168,8 @@ const About = () => {
           >
 
             Passionate <br /> <span className='text-accent'>JavaScript </span> &  <span className='text-accent'> TypeScript</span><br /> Developer
-          </motion.h2>
+
+          </motion.h2> 
           <motion.p
             variants={fadeIn('right', 0.4)}
             initial="hidden"
