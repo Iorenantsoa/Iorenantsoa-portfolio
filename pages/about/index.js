@@ -146,21 +146,20 @@ const About = () => {
   const [index, setIndex] = useState(0)
 
   return (
-    <div className='h-full   py-36  text-center xl:text-left  '>
-      {/* <Circles /> */}
+    <div className='h-full   py-36  text-center xl:text-left  '> 
       {/* Avatar image */}
       <motion.div
         variants={fadeIn('right', 0.2)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px] ">
+        className="hidden xl:flex absolute bottom-0 -left-[325px] -z-20">
         <Avatar />
       </motion.div>
-      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
+      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 '>
 
         {/* text */}
-        <div className='flex-1 flex flex-col justify-center z-30'>
+        <div className='flex-1 flex flex-col justify-center z-40  '>
           <motion.h2 className='h2 md:text-4xl xl:text-4xl '
             variants={fadeIn('right', 0.2)}
             initial="hidden"
@@ -191,21 +190,21 @@ const About = () => {
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={4} duration={7} />
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-[#121212] font-bold'>Years of Study</div>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-[#121212] font-black'>Years of Study</div>
               </div>
               {/* Clients */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 px-5'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={10} duration={7} />+
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-[#121212] font-bold'>Projects</div>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-[#121212] font-black'>Projects</div>
               </div>
               {/* Projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 px-5'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={8} duration={7} />+
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-[#121212] font-bold'>Completed Projects</div>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-[#121212] font-black'>Completed Projects</div>
               </div>
             </div>
           </motion.div>
@@ -230,7 +229,7 @@ const About = () => {
                   <div
                     key={itemIndex}
                     className={`cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[3px]
-                       after:absolute after:-bottom-1 after:left-0 z-10 font-semibold t ${index === itemIndex ? 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300' : 'after:bg-[#121212] text-[#121212]'}
+                       after:absolute after:-bottom-1 after:left-0 z-10 font-medium t ${index === itemIndex ? 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300' : 'after:bg-[#121212] text-[#121212]'}
                      `}
                     onClick={() => setIndex(itemIndex)}
                   >
@@ -246,12 +245,12 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
-                  className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center   text-[#121212] my-1 '
+                  className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center  font-bold text-[#121212] my-1 '
                 >
                   <div className='flex justify-between '>
                     <div >
                       <div className="font-medium mb-2 md:mb-0 md:mr-8 ">{item.stage && `( ${item.stage} )`} {item.title}</div>
-                      <div className="mb-2 md:mb-0 md:mr-8 font-extralight text-sm text-[#222222]">{item.school}</div>
+                      <div className="mb-2 md:mb-0 md:mr-8 font-thin text-[0.8rem] text-[#292828]">{item.school}</div>
                     </div>
                     {/* <div className='flex items-center '>
                       <div className='hidden md:flex '>-</div>

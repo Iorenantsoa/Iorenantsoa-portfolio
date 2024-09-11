@@ -12,7 +12,7 @@ const ParticlesContainer = () => {
 
   return (
     <Particles
-      className='w-full h-full absolute translate-z-0'
+      className='w-full h-full absolute translate-z-0 '
       id='tsparticles'
       init={particlesInit}
       loaded={particlesLoaded}
@@ -48,7 +48,7 @@ const ParticlesContainer = () => {
         },
         particles: {
           color: {
-            value: 'rgb(241, 48,36)' // Change the color of the particles
+            value: '#F9F9F9' // Change the color of the particles
           },
           links: {
             color: '#000000',
@@ -81,10 +81,10 @@ const ParticlesContainer = () => {
             value: 0.7,
           },
           shape: {
-            type: 'square' // Change shape to square
+            type: 'star' // Change shape to square
           },
           size: {
-            value: { min: 1, max: 7 } // Increase the size range
+            value: { min: 1, max: 5 } // Increase the size range
           },
         },
         detectRetina: true
