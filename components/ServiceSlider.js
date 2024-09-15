@@ -77,7 +77,7 @@ const ServiceSlider = () => {
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='z-20 bg-[#2e2d2d]  md:min-h-[300px] md:max-h-[300px] mb-3 rounded-lg px-6 py-8 flex  sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[#424040] transition-all duration-300'>
+            <div className='z-20 bg-[#010101] bg-opacity-90  min-h-[218px] md:min-h-[300px] md:max-h-[300px] mb-3 rounded-lg px-6 py-8 flex  sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[#010101] hover:bg-opacity-30 transition-all duration-300'>
               
                 {/* icon */}
                 <div className='text-4xl text-accent mb-4'>
@@ -85,8 +85,8 @@ const ServiceSlider = () => {
                 </div>
                 {/* title and desc */}
                 <div className='mb-8'>
-                  <div className='mb-2 text-lg text-accent font-semibold'>{item.title}</div>
-                  <p className='max-w-[250px] leading-normal  text-sm text-[#F5F5F5] font-light'>
+                  <div className='mb-2 text-lg text-accent font-bold'>{item.title}</div>
+                  <p className='max-w-[250px] leading-normal  text-sm text-gray-300 font-normal'>
                     {item.description}
                   </p>
                 </div>

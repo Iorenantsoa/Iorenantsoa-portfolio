@@ -21,9 +21,9 @@ const transitionVariants = {
 const Transition = () => {
   return (
     <>
-    <motion.div className='fixed flex justify-center items-center top-0 right-full w-screen h-screen z-30 bg-[#131313]' variants={transitionVariants} initial="initial" animate="animate" exit="exit" transition={ {delay : 0.2 , duration :  0.6 , ease : 'easeInOut'}}>
+    <motion.div className='fixed flex justify-center items-center top-0 right-full w-screen h-screen z-30 bg-[#0D1117]' variants={transitionVariants} initial="initial" animate="animate" exit="exit" transition={ {delay : 0.2 , duration :  0.6 , ease : 'easeInOut'}}>
        {/* 1 */}
-       <Image src={'/bg-explosion2.png'} width={500} height={700} alt="logo" priority={true} className='opacity-70 w-auto h-auto ' />
+       <Image src={'/transition.png'} width={500} height={700} alt="logo" priority={true} className=' w-auto h-auto object-cover  '/>
     </motion.div> 
     <motion.div className='fixed flex justify-center items-center top-0 right-full w-screen h-screen z-20 bg-[#222222]' variants={transitionVariants} initial="initial" animate="animate" exit="exit" transition={ {delay : 0.4 , duration :  0.6 , ease : 'easeInOut'}}>
        {/* 1 */}

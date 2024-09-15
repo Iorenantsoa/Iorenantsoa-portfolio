@@ -1,18 +1,31 @@
 
 //component
-import WorkSlider from "../../components/WorkSlider";
-import Bulb from '../../components/Bulb'
-import Circles from '../../components/Circles'
+import WorkSlider from "../../components/WorkSlider"; 
 
 // framer motion
 
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
+import ParticlesContainer from "../../components/ParticlesContainer";
+import AvatarWork from "../../components/AvatarWork";
 
 const Work = () => {
   return (
-    <div className="h-full  flex items-center py-36">
-      {/* <Circles /> */}
+    <div className="min-h-screen  flex items-center py-36">
+
+      <div className="w-full xl:w-[100%] h-full absolute right-0 bottom-0 bg-[#0D1117] -z-50 ">
+      
+        <ParticlesContainer  />
+      </div> 
+      {/* Avatar image */}
+      <motion.div
+        variants={fadeIn('right', 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="hidden xl:flex absolute bottom-0 -left-[25px] -z-20 opacity-85">
+        <AvatarWork />
+      </motion.div>
 
       <div className="container mx-auto ">
         <div className="flex flex-col xl:flex-row gap-x-8 ">
@@ -23,7 +36,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 "
+              className="h3 "
             >
               My works <span className="text-accent">.</span>
             </motion.h2>

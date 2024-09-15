@@ -8,18 +8,14 @@ const sora = Sora({
 })
 
 import Nav from '../components/Nav'
-import Header from '../components/Header'
-import TopLeftImg from '../components/TopLeftImg'
+import Header from '../components/Header' 
 const Layout = ({ children }) => {
   return (
 
-    <div className={`page   text-[#111827] bg-cover  bg-repeat  ${sora.variable} font-sora relative `} >
-      {/* <TopLeftImg /> */}
-      <Nav />
-      {/* <div className='flex flex-col justify-between items-center'> */}
+    <div className={`page   text-[#111827] bg-cover  bg-repeat  ${sora.variable} font-sora relative `} > 
+      <Nav /> 
         <Header />
-        {children}
-      {/* </div> */}
+        {children} 
 
     </div>
   )
