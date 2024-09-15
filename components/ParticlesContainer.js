@@ -78,10 +78,16 @@ const ParticlesContainer = () => {
             value: 100
           },
           opacity: {
-            value: 0.7,
+            value: 0.3,
           },
           shape: {
-            type: 'star' // Change shape to square
+            type: 'star' ,
+            // type: 'image',  // Use 'image' as the type
+            // image: {
+            //   src: '/prise.png',  // Replace with your image URL
+            //   width: 100,
+            //   height: 100
+            // }
           },
           size: {
             value: { min: 1, max: 5 } // Increase the size range

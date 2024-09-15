@@ -1,59 +1,74 @@
 
-import ParticlesContainer from '../components/ParticlesContainer' 
-import Avatar from '../components/Avatar'
-
+import ParticlesContainer from '../components/ParticlesContainer'
+import { ReactTyped } from "react-typed";
 
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { LuDownload } from "react-icons/lu";
 import { RiGithubFill } from 'react-icons/ri'
+import Link from 'next/link';
 
 const Home = () => {
 
-
+  
 
   return (
 
-    <div className='min-w-[100vw] min-h-screen   absolute top-0 left-0  container mx-auto'>
+    <div className='min-w-[100vw] h-full absolute top-0 left-0   container mx-auto  '>
       {/* particle */}
-      <div className="w-full xl:w-[100%] h-full absolute right-0 bg-[#0D1117] -z-10">
+      <div className="w-full xl:w-[100%] h-full absolute right-0 bg-[#0D1117] -z-50 ">
         <ParticlesContainer />
       </div>
 
-      <div className='flex justify-center items-center h-full '>
-        <div className="text-center flex flex-col justify-center items-center py-48 xl:text-left container mx-auto flex-1">
+      <div className='flex justify-center items-center h-full absolute bottom-0 right-0 left-0'>
+        <div className=" flex flex-col justify-center items-center xl:items-start   text-center xl:text-left container mx-auto  ">
           <motion.h1
             variants={fadeIn('down', 0.2)}
             initial='hidden'
             animate="show"
             exit="hidden"
-            className=" h2 z-30 text-slate-50 text-center"
+            className=" h3 z-30 text-slate-50  text-center xl:text-left"
           >
             Let{"'"}s Coding  <br /> the Future,
             <span className="text-accent ">Today</span>
           </motion.h1>
+
 
           <motion.p
             variants={fadeIn('down', 0.3)}
             initial='hidden'
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0  text-slate-50 z-30  text-center  " //text-slate-700
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0  text-slate-50 z-30  text-justify xl:text-start  "
           >
-            I’m Ratsimbazafy Iorenantsoa Cédric Antsamalala, a junior developer specializing in crafting web and mobile applications. I focus on delivering creative and efficient solutions to help bring your vision to life.
+            <ReactTyped
+              strings={[
+                " Hi, I’m  <span className='font-medium text-lg'>Ratsimbazafy Iorenantsoa Cédric Antsamalala</span>, Passionate about new technologies and eager to learn, with motivation to tackle challenges and explore new opportunities. Curious and proactive in applying skills and making a meaningful contribution to innovative projects."
+
+              ]}
+              typeSpeed={10}
+            />
+
           </motion.p>
 
           <div className="flex flex-col items-center justify-center xl:hidden relative gap-y-3 mt-8">
             {/* <ProjectsBtn /> */}
-            <button className="rounded-md flex items-center bg-accent text-slate-50 border border-transparent py-3 px-5 text-center text-sm font-semibold transition-all hover:bg-[#d12b1f] hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-[#f05044] focus:ring-opacity-50 active:bg-[#b8251c] active:shadow-inner disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+
+            <Link
+              href="/IorenantsoaCV.pdf"
+              className="rounded-md flex items-center bg-accent text-slate-50 border border-transparent py-3 px-5 text-center text-sm font-semibold transition-all hover:bg-[#d12b1f] hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-[#f05044] focus:ring-opacity-50 active:bg-[#b8251c] active:shadow-inner disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
               <LuDownload className="h-5 w-5 mr-2 text-slate-50 font-semibold" />
               DOWNLOAD MY CV
-            </button>
-            <button className="rounded-md flex items-center bg-transparent border border-slate50 text-gray-300 py-3 px-5 text-center text-sm font-semibold transition-all hover:bg-black hover:text-slate-50 hover:font-semibold hover:bg-opacity-30 focus:bg-slate-200 active:bg-slate-200 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+            </Link>
+            <Link
+              href="https://github.com/iorenantsoa" // Replace with your actual GitHub profile link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md flex items-center bg-transparent border border-slate50 text-gray-300 py-3 px-5 text-center text-sm font-semibold transition-all hover:bg-black hover:text-slate-50 hover:font-semibold hover:bg-opacity-30 focus:bg-slate-200 active:bg-slate-200 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
 
-              <RiGithubFill className="h-5 w-5 mr-2 text-gray-300"   />
+              <RiGithubFill className="h-5 w-5 mr-2 text-gray-300" />
               GitHub
-            </button>
+            </Link>
 
           </div>
           <motion.div
@@ -64,21 +79,27 @@ const Home = () => {
             className="hidden xl:flex text-slate-50 z-20 justify-around mt-8 gap-x-4 "
           >
 
-            <button className="rounded-md flex items-center bg-accent text-slate-50 border border-transparent py-3 px-5 text-center text-sm font-semibold transition-all hover:bg-[#d12b1f] hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-[#f05044] focus:ring-opacity-50 active:bg-[#b8251c] active:shadow-inner disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+            <Link
+              href="/IorenantsoaCV.pdf"
+              className="rounded-md flex items-center bg-accent text-slate-50 border border-transparent py-3 px-5 text-center text-sm font-semibold transition-all hover:bg-[#d12b1f] hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-[#f05044] focus:ring-opacity-50 active:bg-[#b8251c] active:shadow-inner disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
               <LuDownload className="h-5 w-5 mr-2 text-slate-50 font-semibold" />
               DOWNLOAD MY CV
-            </button>
-            <button className="rounded-md flex items-center bg-transparent border border-slate50 text-gray-300 py-3 px-5 text-center text-sm font-semibold transition-all hover:bg-slate-100 hover:text-slate-50 hover:font-semibold hover:bg-opacity-10 focus:bg-slate-200 active:bg-slate-200 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+            </Link>
+            <Link
+              href="https://github.com/iorenantsoa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md flex items-center bg-transparent border border-slate50 text-gray-300 py-3 px-5 text-center text-sm font-semibold transition-all hover:bg-slate-100 hover:text-slate-50 hover:font-semibold hover:bg-opacity-10 active:bg-slate-100 active:text-slate-50 active:font-semibold active:bg-opacity-10 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
 
-              <RiGithubFill className="h-5 w-5 mr-2 text-gray-300"   />
+              <RiGithubFill className="h-5 w-5 mr-2 text-gray-300" />
               GitHub
-            </button>
+            </Link>
           </motion.div>
         </div>
 
-        <div className='h-full hidden xl:flex  flex-1  z-10 '>
+        <div className='h-full hidden xl:flex    z-10 '>
           {/* bg img */}
-          <div className="hidden xl:flex  bg-none xl:bg-home2 xl:bg-cover xl:bg-center    w-[45%] h-[88%] z-20 absolute  bottom-0 
+          <div className="hidden xl:flex  bg-none xl:bg-home2 xl:bg-cover xl:bg-center  w-[45%] h-[88%] z-20 absolute  bottom-0 
          right-10 translate-z-0 ">
           </div>
         </div>

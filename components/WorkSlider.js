@@ -71,11 +71,11 @@ const WorkSlider = () => {
   return (
     <Swiper
       spaceBetween={10}
-      pagination={{
+      pagination={{ 
         clickable: true
       }}
       modules={[Pagination]}
-      className='h-[280px] sm:h-[480px]'
+      className='min-h-[280px]   '
     >
       {workSlides.slides.map((slide, index) => {
         return (

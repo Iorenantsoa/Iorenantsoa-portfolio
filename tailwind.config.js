@@ -28,10 +28,7 @@ module.exports = {
       },
       backgroundImage: {
         home1: 'url("/bg-home1.png")',
-        home2: 'url("/bg-home2.png")',
-        circles: 'url("/bg-circles.png")',
-        circleStar: 'url("/circle-star.svg")',
-        site: 'url("/site-bg.svg")',
+        home2: 'url("/bg-home2 - Copie.png")',  
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
