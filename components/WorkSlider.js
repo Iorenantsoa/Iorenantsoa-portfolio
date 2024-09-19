@@ -5,18 +5,18 @@ const workSlides = {
       images: [
         {
           title: 'TutoForYou',
-          path: '/TutoForYou.jpg',
+          path: '/TutoForYou (3).jpg',
         },
         {
-          title: 'title',
-          path: '/RenalScanAI.jpg',
+          title: 'RenalScanAI',
+          path: '/RenalScanAI (1).jpg',
         },
         {
-          title: 'title',
-          path: '/Gstage.jpg',
+          title: 'Gstage',
+          path: '/Gstage (5).jpg',
         },
         {
-          title: 'title',
+          title: 'gasyCarImage',
           path: '/gasyCarImage.jpg',
         },
         
@@ -26,22 +26,13 @@ const workSlides = {
     {
       images: [
         {
-          title: 'title',
-          path: '/G-permiConstruire4.jpg',
+          title: 'G-permiConstruire',
+          path: '/G-permiConstruire (4).jpg',
         },
         {
-          title: 'title',
-          path: '/NybaibolikoImage.jpg',
-        },
-        
-        // {
-        //   title: 'title',
-        //   path: '/thumb2.jpg',
-        // },
-        // {
-        //   title: 'title',
-        //   path: '/thumb3.jpg',
-        // },
+          title: 'ByBaiboliko',
+          path: '/Ny baiboliko (3).jpg',
+        }, 
       ],
     },
   ],
@@ -80,11 +71,11 @@ const WorkSlider = () => {
       {workSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='grid grid-cols-2 grid-rows-2 gap-4  cursor-pointer'>
+            <div className='grid grid-cols-2 grid-rows-2 gap-4  cursor-pointer opacity-95'>
               {
                 slide.images.map((image, index) => {
                   return (
-                    <div key={index} className='relative rounded-lg overflow-hidden flex items-center justify-center group'>
+                    <div key={index} className='relative rounded-lg overflow-hidden flex items-center justify-center group  '>
                       <div className='flex items-center justify-center relative overflow-hidden group'>
                         {/* image */}
                         <Image

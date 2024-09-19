@@ -1,10 +1,10 @@
-import React from 'react'
-import ParticlesContainer from '../components/ParticlesContainer'
+import React from 'react' 
 
 // framer motion
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import Image from 'next/image'
+import NotFoundParticales from '../components/NotFoundParticales'
 
 const PageNotFound = () => {
     return (
@@ -12,7 +12,7 @@ const PageNotFound = () => {
 
             <div className="w-full xl:w-[100%] h-full absolute right-0 bottom-0 bg-[#0D1117] -z-50  ">
 
-                <ParticlesContainer />
+                <NotFoundParticales />
             </div>
             <div className="container mx-auto h-full  flex justify-center items-center ">
                 {/* text */}

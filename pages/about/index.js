@@ -8,6 +8,7 @@ import {
   FaFigma,
   FaGithub,
   FaGitAlt,
+  FaAngular,
 } from "react-icons/fa";
 
 import {
@@ -50,13 +51,13 @@ export const aboutData = [
           <RiJavascriptFill />,
           <BiLogoTypescript />,
           <FaReact />,
+          <FaAngular />,
           <SiNextdotjs />,
           <FaNode />,
           <SiNestjs />,
           <SiSymfony />,
 
         ],
-
       },
       {
         title: 'Mobile Development',
@@ -137,7 +138,6 @@ export const aboutData = [
   },
 ];
 
-import Avatar from '../../components/Avatar'
 import CountUp from 'react-countup';
 import ParticlesContainer from '../../components/ParticlesContainer';
 import AvatarAbout from '../../components/AvatarAbout';
@@ -182,12 +182,8 @@ const About = () => {
             animate="show"
             exit="hidden"
             className='max-w-[500] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-center xl:text-left '>
-            <ReactTyped
-              strings={[
-                "As a JavaScript and TypeScript developer, I focus on creating functional and elegant web solutions. My professional and innovative approach aims to meet client needs while ensuring the performance and reliability of applications."
-              ]}
-              typeSpeed={1}
-            />
+            As a JavaScript and TypeScript developer, I focus on creating functional and elegant web solutions. My professional and innovative approach aims to meet client needs while ensuring the performance and reliability of applications.
+
           </motion.p>
           {/* counter */}
           <motion.div

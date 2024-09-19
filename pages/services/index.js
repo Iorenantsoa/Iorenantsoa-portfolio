@@ -46,7 +46,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-slate-50 ">
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-slate-50  ">
               I provide software development services focused on quality and innovation, creating robust web, mobile, and digital solutions tailored to the specific needs of clients.
             </motion.p>
           </div>
