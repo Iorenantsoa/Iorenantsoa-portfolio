@@ -26,7 +26,7 @@ const PageNotFound = () => {
                     >
                         <div className='flex flex-col justify-center items-center gap-x-6'>
                             <div className=' flex '>
-                                <Image src="/404notFound.png" width={400} height={300} alt='404 not found' objectFit="cover" objectPosition='cover' />
+                                <Image src="/404notFound.png" width={400} height={300} alt='404 not found'  className='object-cover' />
                             </div>
                         </div>
                     </motion.h2>
