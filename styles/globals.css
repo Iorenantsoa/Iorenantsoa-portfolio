@@ -42,7 +42,7 @@
 }
 
   p {
-    @apply leading-[1.6] text-slate-50 text-sm md:text-[16px] font-normal;
+    @apply leading-[1.6] text-slate-50 text-sm md:text-[15.3px] font-normal;
     /* @apply leading-[1.6] text-[#313841] text-sm md:text-[16px] font-normal  ; */
   }
 

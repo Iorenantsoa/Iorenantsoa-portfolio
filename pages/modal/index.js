@@ -40,11 +40,11 @@ export default function Modal({ isOpen, closeModal, content }) {
       animate="show"
       exit="hidden"
       id="modal-background"
-      className="fixed inset-0 z-50 flex items-center justify-center bg-slate-50 bg-opacity-30"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-slate-50 bg-opacity-30 backdrop-blur-sm "
       onClick={handleClickOutside}
     >
       <div
-        className="relative w-[90%] h-[80%] bg-[#0D1117] rounded-xl shadow-lg flex flex-col    ">
+        className="relative w-[90%] h-[80%] xl:w-[80%] bg-[#0D1117] rounded-xl shadow-lg flex flex-col    ">
         {/* Header du modal */}
         <div className="p-4 bg-[#0D1117] rounded-xl rounded-b-none  text-xl xl:text-3xl font-bold border-b text-slate-50 flex justify-between items-center xl:px-5">
           {content.title}  {/* Affiche le titre dynamique */}
@@ -107,7 +107,7 @@ export default function Modal({ isOpen, closeModal, content }) {
             onClick={closeModal}
             className="hidden bg-accent text-white px-4 py-2  rounded-md hover:bg-red-600 transition duration-300 md:flex items-center justify-center"
           >
-            <span><RiCloseFill className='h-5 w-5 mr-2 text-white font-semibold' /></span>
+            <span><RiCloseFill className='h-5 w-5   text-white font-semibold' /></span>
             Close
           </button>
         </div>

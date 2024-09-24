@@ -29,8 +29,7 @@ const workSlides = {
             <SiDotnet key={2} className='w-[25px] h-[25px]' />,
             <SiMongodb key={4} className='w-[25px] h-[25px]' />
           ],
-          link: 'https://github.com/Iorenantsoa/G_stage'
-
+          link: 'https://github.com/Iorenantsoa/TutoForYouNextJs'
         },
         {
           title: 'RenalScanAI',
@@ -90,9 +89,9 @@ const workSlides = {
           link: 'https://github.com/IsmaelFanomezantsoa/gestion_fonciere_et_PC'
         },
         {
-          title: 'ByBaiboliko',
+          title: 'nyBaiboliko',
           path: '/Ny baiboliko (3).jpg',
-          description: "NyBaiboliko is a mobile application designed to provide easy access to the Bible in Malagasy, including both the Old and New Testaments. It offers a user-friendly interface, allowing users to read and explore the Scriptures in their native language. The app includes features such as verse search, personal annotations, and the ability to create favorites. With NyBAiboliko, users can enrich their spiritual journey and stay connected to their faith daily.",
+          description: "NyBaiboliko is a mobile application designed to provide easy access to the Bible in Malagasy, including both the Old and New Testaments. It offers a user-friendly interface, allowing users to read and explore the Scriptures in their native language. The app includes features such as verse search, personal annotations, and the ability to create favorites. With nyBaiboliko, users can enrich their spiritual journey and stay connected to their faith daily.",
           technologies: [
             <SiJavascript key={3} className='w-[25px] h-[25px]' />,
             <TbBrandReactNative key={1} className='w-[25px] h-[25px]' />,

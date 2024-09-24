@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import {
   FaHtml5,
   FaCss3,
-  FaReact,
+  FaReact, 
   FaNode,
   FaFigma,
   FaGithub,
@@ -46,52 +46,52 @@ export const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <RiJavascriptFill />,
-          <BiLogoTypescript />,
-          <FaReact />,
-          <FaAngular />,
-          <SiNextdotjs />,
-          <FaNode />,
-          <SiNestjs />,
-          <SiSymfony />,
+          <FaHtml5 key={0}/>,
+          <FaCss3 key={1} />,
+          <RiJavascriptFill key={2} />,
+          <BiLogoTypescript key={3}/>,
+          <FaReact key={4}/>,
+          <FaAngular  key={5}/>,
+          <SiNextdotjs key={6}/>,
+          <FaNode  key={7}/>,
+          <SiNestjs key={8}/>,
+          <SiSymfony key={9}/>,
 
         ],
       },
       {
         title: 'Mobile Development',
         icons: [
-          <SiKotlin />,
-          <TbBrandReactNative />,
-          <SiExpo />,
+          <SiKotlin key={10}/>,
+          <TbBrandReactNative key={11}/>,
+          <SiExpo key={12}/>,
 
         ],
       },
       {
         title: 'Artificial Intelligence (AI)',
         icons: [
-          <SiPython />,
-          <SiNumpy />,
-          <SiPandas />,
-          <SiScikitlearn />,
-          <SiTensorflow />,
-          <SiKeras />,
+          <SiPython key={13}/>,
+          <SiNumpy key={14}/>,
+          <SiPandas key={15}/>,
+          <SiScikitlearn key={16}/>,
+          <SiTensorflow key={17}/>,
+          <SiKeras key={18}/>,
 
         ],
       },
 
       {
         title: 'Databases',
-        icons: [<SiSqlite />, <SiPostgresql />, <SiMongodb />, <SiMysql />,],
+        icons: [<SiSqlite key={19} />, <SiPostgresql key={20}/>, <SiMongodb key={21}/>, <SiMysql key={22} />,],
       },
       {
         title: 'Version Control',
-        icons: [<FaGitAlt />, <FaGithub />],
+        icons: [<FaGitAlt key={23}/>, <FaGithub key={24}/>],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<FaFigma key={25}/>, <SiAdobexd key={62}/>, <SiAdobephotoshop key={27}/>],
       },
     ],
   },
