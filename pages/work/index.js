@@ -46,7 +46,7 @@ const Work = () => {
               animate="show"
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-              Explore a selection of projects I{"'"}ve worked on, showcasing my skills and creativity in developing innovative and functional solutions.
+              Check out some of the projects I{"'"}ve completed to see how I{"'"}ve put my skills and creativity to work in coming up with practical solutions. 
             </motion.p>
           </div>
 
@@ -55,14 +55,12 @@ const Work = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full xl:max-w-[65%]">
-            {/* slider */}
+            className="w-full xl:max-w-[65%]"> 
             <WorkSlider />
           </motion.div>
 
         </div>
-      </div>
-      {/* <Bulb /> */}
+      </div> 
     </div>
   )
 };

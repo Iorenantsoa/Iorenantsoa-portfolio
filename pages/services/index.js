@@ -1,23 +1,19 @@
 
 //component
-import ServiceSlider from "../../components/ServiceSlider";
-import Bulb from '../../components/Bulb'
-import Circles from '../../components/Circles'
-
+import ServiceSlider from "../../components/ServiceSlider"; 
 // framer motion
 
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
 import AvatarMyService from "../../components/AvatarMyService";
-import ParticlesContainer from "../../components/ParticlesContainer";
-import Avatar from "../../components/Avatar";
+import ParticlesContainer from "../../components/ParticlesContainer"; 
 
 const Services = () => {
   return (
     <div className="min-h-screen  flex items-center py-36 ">
       <div className="w-full xl:w-[100%] h-full absolute right-0 bg-[#0D1117] -z-50 ">
         <ParticlesContainer />
-      </div> 
+      </div>
       {/* Avatar image */}
       <motion.div
         variants={fadeIn('left', 0.2)}
@@ -47,8 +43,9 @@ const Services = () => {
               animate="show"
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-slate-50  ">
-              I provide software development services focused on quality and innovation, creating robust web, mobile, and digital solutions tailored to the specific needs of clients.
+              My work revolves around developing software with an emphasis, on quality and innovation. Crafting web and mobile solutions that are customized to meet the unique requirements of our clients.
             </motion.p>
+
           </div>
 
           <motion.div

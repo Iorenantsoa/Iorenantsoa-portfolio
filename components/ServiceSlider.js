@@ -16,7 +16,7 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: 'Branding',
-    description: 'Development of a unique visual identity to reflect specific values and goals..',
+    description: 'Crafting a identity that embodies particular values and objectives.',
   },
   {
     icon: <RxPencil2 />,

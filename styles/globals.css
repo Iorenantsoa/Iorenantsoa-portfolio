@@ -21,11 +21,11 @@
 @layer base {
   body {
     /* @apply bg-gradient-to-r from-slate-200 via-slate-100 to-slate-200 overflow-x-hidden leading-relaxed scrollbar-thin; */
-    @apply  overflow-x-hidden leading-relaxed scrollbar-thin;
+    @apply  overflow-x-hidden leading-relaxed scrollbar-none;
   }
 
   .page {
-    @apply w-full min-h-screen md:pb-0 overflow-x-hidden scrollbar-thin;
+    @apply w-full min-h-screen md:pb-0 overflow-x-hidden scrollbar-none;
   }
 
   .h1 {

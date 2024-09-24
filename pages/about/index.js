@@ -182,7 +182,7 @@ const About = () => {
             animate="show"
             exit="hidden"
             className='max-w-[500] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-center xl:text-left '>
-            As a JavaScript and TypeScript developer, I focus on creating functional and elegant web solutions. My professional and innovative approach aims to meet client needs while ensuring the performance and reliability of applications.
+            In my role, as a developer specializing in JavaScript and TypeScript technologies I prioritize crafting user sophisticated web solutions that deliver on client expectations while maintaining levels of performance and reliability.
 
           </motion.p>
           {/* counter */}
@@ -258,7 +258,7 @@ const About = () => {
                   <div className='flex justify-between '>
                     <div >
                       <div className="font-normal mb-2 md:mb-0 md:mr-8 ">{item.stage && `( ${item.stage} )`} {item.title}</div>
-                      <div className="mb-2 md:mb-0 md:mr-8  text-[0.8rem] text-sm text-gray-500 font-normal">{item.school}</div>
+                      <div className="mb-2 md:mb-0 md:mr-8  text-[0.8rem] text-sm text-gray-400 font-normal">{item.school}</div>
 
                     </div>
                   </div>
