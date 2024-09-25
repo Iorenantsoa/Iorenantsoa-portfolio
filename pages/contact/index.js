@@ -23,8 +23,6 @@ const Contact = () => {
 
           <ParticlesContainer />
         </div>
-
-
         <div className='container mx-auto h-full flex flex-col items-center  xl:flex-row gap-x-6 '>
 
           <div className='flex-1 hidden  xl:flex flex-col justify-center  items-center max-w-[50%] max-h-[10%]  '>
