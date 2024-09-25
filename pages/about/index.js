@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import {
   FaHtml5,
   FaCss3,
-  FaReact, 
+  FaReact,
   FaNode,
   FaFigma,
   FaGithub,
@@ -46,52 +46,52 @@ export const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 key={0}/>,
+          <FaHtml5 key={0} />,
           <FaCss3 key={1} />,
           <RiJavascriptFill key={2} />,
-          <BiLogoTypescript key={3}/>,
-          <FaReact key={4}/>,
-          <FaAngular  key={5}/>,
-          <SiNextdotjs key={6}/>,
-          <FaNode  key={7}/>,
-          <SiNestjs key={8}/>,
-          <SiSymfony key={9}/>,
+          <BiLogoTypescript key={3} />,
+          <FaReact key={4} />,
+          <FaAngular key={5} />,
+          <SiNextdotjs key={6} />,
+          <FaNode key={7} />,
+          <SiNestjs key={8} />,
+          <SiSymfony key={9} />,
 
         ],
       },
       {
         title: 'Mobile Development',
         icons: [
-          <SiKotlin key={10}/>,
-          <TbBrandReactNative key={11}/>,
-          <SiExpo key={12}/>,
+          <SiKotlin key={10} />,
+          <TbBrandReactNative key={11} />,
+          <SiExpo key={12} />,
 
         ],
       },
       {
         title: 'Artificial Intelligence (AI)',
         icons: [
-          <SiPython key={13}/>,
-          <SiNumpy key={14}/>,
-          <SiPandas key={15}/>,
-          <SiScikitlearn key={16}/>,
-          <SiTensorflow key={17}/>,
-          <SiKeras key={18}/>,
+          <SiPython key={13} />,
+          <SiNumpy key={14} />,
+          <SiPandas key={15} />,
+          <SiScikitlearn key={16} />,
+          <SiTensorflow key={17} />,
+          <SiKeras key={18} />,
 
         ],
       },
 
       {
         title: 'Databases',
-        icons: [<SiSqlite key={19} />, <SiPostgresql key={20}/>, <SiMongodb key={21}/>, <SiMysql key={22} />,],
+        icons: [<SiSqlite key={19} />, <SiPostgresql key={20} />, <SiMongodb key={21} />, <SiMysql key={22} />,],
       },
       {
         title: 'Version Control',
-        icons: [<FaGitAlt key={23}/>, <FaGithub key={24}/>],
+        icons: [<FaGitAlt key={23} />, <FaGithub key={24} />],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma key={25}/>, <SiAdobexd key={62}/>, <SiAdobephotoshop key={27}/>],
+        icons: [<FaFigma key={25} />, <SiAdobexd key={62} />, <SiAdobephotoshop key={27} />],
       },
     ],
   },
@@ -141,144 +141,153 @@ export const aboutData = [
 import CountUp from 'react-countup';
 import ParticlesContainer from '../../components/ParticlesContainer';
 import AvatarAbout from '../../components/AvatarAbout';
-import { ReactTyped } from 'react-typed';
+import Head from 'next/head';
 
 
 const About = () => {
   const [index, setIndex] = useState(0)
 
   return (
-    <div className="min-h-screen  flex items-center py-36 ">
-      <div className="w-full xl:w-[100%] h-full absolute right-0 bg-[#0D1117] -z-50 ">
-        <ParticlesContainer />
-      </div>
-      {/* Avatar image */}
-      <motion.div
-        variants={fadeIn('left', 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="hidden xl:flex absolute bottom-0 justify-end -z-20 ">
-        <AvatarAbout />
-      </motion.div>
+    <div>
+      <Head>
+        <title>iorenantsoa | About</title>
+        <meta name="description" content="Learn more about iorenantsoa, my background, experience, and skills." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="UTF-8" />
+      </Head>
 
-      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 '>
-
-        {/* text */}
-        <div className='flex-1 flex flex-col justify-start items-center xl:items-start z-40  '>
-          <motion.h2 className='h3 md:text-4xl xl:text-4xl text-center xl:text-left '
-            variants={fadeIn('right', 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-          >
-
-            Passionate <br /> <span className='text-accent'>JavaScript </span> &  <span className='text-accent'> TypeScript</span><br /> Developer
-
-          </motion.h2>
-          <motion.p
-            variants={fadeIn('right', 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className='max-w-[500] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-center xl:text-left '>
-            In my role, as a developer specializing in JavaScript and TypeScript technologies I prioritize crafting user sophisticated web solutions that deliver on client expectations while maintaining levels of performance and reliability.
-
-          </motion.p>
-          {/* counter */}
-          <motion.div
-            variants={fadeIn('right', 0.6)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-10'>
-            <div className='flex flex-1 xl:gap-x-6'>
-              {/* Experience */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 pr-5'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={4} duration={7} />
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-slate-50 font-bold'>Years of Study</div>
-              </div>
-              {/* Clients */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 px-5'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={10} duration={7} />+
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-slate-50 font-bold'>Projects</div>
-              </div>
-              {/* Projects */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 px-5'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={8} duration={7} />+
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-slate-50 font-bold'>Completed Projects</div>
-              </div>
-            </div>
-          </motion.div>
-
-
-
+      <div className="min-h-screen  flex items-center py-36 ">
+        <div className="w-full xl:w-[100%] h-full absolute right-0 bg-[#0D1117] -z-50 ">
+          <ParticlesContainer />
         </div>
-
-
-        {/* info */}
+        {/* Avatar image */}
         <motion.div
-          variants={fadeIn('left', 0.4)}
+          variants={fadeIn('left', 0.2)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          className='flex flex-col w-full xl:max-w-[48%] min-h-[480px]'>
+          className="hidden xl:flex absolute bottom-0 justify-end -z-20 ">
+          <AvatarAbout />
+        </motion.div>
 
-          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
-            {
-              aboutData.map((item, itemIndex) => {
+        <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 '>
+
+          {/* text */}
+          <div className='flex-1 flex flex-col justify-start items-center xl:items-start z-40  '>
+            <motion.h2 className='h3 md:text-4xl xl:text-4xl text-center xl:text-left '
+              variants={fadeIn('right', 0.2)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+            >
+
+              Passionate <br /> <span className='text-accent'>JavaScript </span> &  <span className='text-accent'> TypeScript</span><br /> Developer
+
+            </motion.h2>
+            <motion.p
+              variants={fadeIn('right', 0.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className='max-w-[500] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-center xl:text-left '>
+              In my role, as a developer specializing in JavaScript and TypeScript technologies I prioritize crafting user sophisticated web solutions that deliver on client expectations while maintaining levels of performance and reliability.
+
+            </motion.p>
+            {/* counter */}
+            <motion.div
+              variants={fadeIn('right', 0.6)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-10'>
+              <div className='flex flex-1 xl:gap-x-6'>
+                {/* Experience */}
+                <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 pr-5'>
+                  <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                    <CountUp start={0} end={4} duration={7} />
+                  </div>
+                  <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-slate-50 font-bold'>Years of Study</div>
+                </div>
+                {/* Clients */}
+                <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 px-5'>
+                  <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                    <CountUp start={0} end={10} duration={7} />+
+                  </div>
+                  <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-slate-50 font-bold'>Projects</div>
+                </div>
+                {/* Projects */}
+                <div className='relative flex-1 after:w-[1px] after:h-full after:bg-[#bec3ca] after:absolute after:top-0 after:right-0 px-5'>
+                  <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                    <CountUp start={0} end={8} duration={7} />+
+                  </div>
+                  <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-slate-50 font-bold'>Completed Projects</div>
+                </div>
+              </div>
+            </motion.div>
+
+
+
+          </div>
+
+
+          {/* info */}
+          <motion.div
+            variants={fadeIn('left', 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className='flex flex-col w-full xl:max-w-[48%] min-h-[480px]'>
+
+            <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
+              {
+                aboutData.map((item, itemIndex) => {
+                  return (
+                    <div
+                      key={itemIndex}
+                      className={`cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[3px]
+                       after:absolute after:-bottom-1 after:left-0 z-10 font-medium t ${index === itemIndex ? 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300' : 'after:bg-slate-50 text-slate-50'}
+                     `}
+                      onClick={() => setIndex(itemIndex)}
+                    >
+                      {item.title}
+                    </div>
+                  )
+                })
+              }
+            </div>
+
+            <div className=' py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-start xl:items-start flex-wrap mx-auto xl:mx-0'>
+              {aboutData[index].info.map((item, itemIndex) => {
                 return (
                   <div
                     key={itemIndex}
-                    className={`cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[3px]
-                       after:absolute after:-bottom-1 after:left-0 z-10 font-medium t ${index === itemIndex ? 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300' : 'after:bg-slate-50 text-slate-50'}
-                     `}
-                    onClick={() => setIndex(itemIndex)}
+                    className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-start flex-wrap font-bold text-slate-50 my-1 '
                   >
-                    {item.title}
-                  </div>
-                )
-              })
-            }
-          </div>
+                    <div className='flex justify-between '>
+                      <div >
+                        <div className="font-normal mb-2 md:mb-0 md:mr-8 ">{item.stage && `( ${item.stage} )`} {item.title}</div>
+                        <div className="mb-2 md:mb-0 md:mr-8  text-[0.8rem] text-sm text-gray-400 font-normal">{item.school}</div>
 
-          <div className=' py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-start xl:items-start flex-wrap mx-auto xl:mx-0'>
-            {aboutData[index].info.map((item, itemIndex) => {
-              return (
-                <div
-                  key={itemIndex}
-                  className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-start flex-wrap font-bold text-slate-50 my-1 '
-                >
-                  <div className='flex justify-between '>
-                    <div >
-                      <div className="font-normal mb-2 md:mb-0 md:mr-8 ">{item.stage && `( ${item.stage} )`} {item.title}</div>
-                      <div className="mb-2 md:mb-0 md:mr-8  text-[0.8rem] text-sm text-gray-400 font-normal">{item.school}</div>
-
+                      </div>
+                    </div>
+                    <div className='flex gap-x-4 flex-wrap gap-y-2'>
+                      {item.icons?.map((icon, itemIndex) => {
+                        return (
+                          <div className='text-2xl text-slate-200 ' key={itemIndex} >
+                            {icon}
+                          </div>
+                        )
+                      })}
                     </div>
                   </div>
-                  <div className='flex gap-x-4 flex-wrap gap-y-2'>
-                    {item.icons?.map((icon, itemIndex) => {
-                      return (
-                        <div className='text-2xl text-slate-200 ' key={itemIndex} >
-                          {icon}
-                        </div>
-                      )
-                    })}
-                  </div>
-                </div>
-              )
-            })}
-          </div>
+                )
+              })}
+            </div>
 
 
 
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </div>
   );
