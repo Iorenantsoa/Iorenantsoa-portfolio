@@ -8,7 +8,7 @@ import { Pagination } from 'swiper';
 
 // Importation du Modal personnalisé
 import ModalPage from '../pages/modal';  // Assure-toi de l'importer depuis le bon fichier
-import { SiBootstrap, SiDotnet, SiExpo, SiJavascript, SiJquery, SiKeras, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiPhp, SiPython, SiQt, SiReact, SiRedux, SiSymfony, SiTailwindcss, SiTensorflow } from "react-icons/si";
+import { SiBootstrap, SiDotnet, SiExpo, SiFacebook, SiJavascript, SiJquery, SiKeras, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiPhp, SiPython, SiQt, SiReact, SiRedux, SiSymfony, SiTailwindcss, SiTensorflow } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
 
@@ -18,6 +18,15 @@ const workSlides = {
   slides: [
     {
       images: [
+        {
+          title: 'SueMag',
+          path: '/SueMAg.jpg',
+          description: "I manage the Facebook page of SueMag, an online store specializing in clothing, bags, shoes , ETC... My role includes content creation, community engagement, and optimizing ad campaigns to increase brand visibility and drive sales.",
+          technologies: [
+            <SiFacebook key={7} className='w-[25px] h-[25px]' />, 
+          ],
+          link: 'https://web.facebook.com/Suesoary/'
+        },
         {
           title: 'TutoForYou',
           path: '/TutoForYou (3).jpg',
@@ -32,30 +41,15 @@ const workSlides = {
           link: 'https://github.com/Iorenantsoa/TutoForYouNextJs'
         },
         {
-          title: 'RenalScanAI',
-          path: '/RenalScanAI (1).jpg',
-          description: "RenalScanAI is an innovative application that uses artificial intelligence to detect and classify various kidney diseases from medical images. Developed to assist healthcare professionals in diagnosing renal conditions, the application relies on a convolutional neural network (CNN) model trained with TensorFlow Keras to analyze images and provide accurate predictions on four types of kidney diseases.",
+          title: 'Sweetiiies',
+          path: '/sweetiiies.png',
+          description: "Facebook page dedicated to my poetry: sharing original creations and managing interaction with a community passionate about literature.",
           technologies: [
-            <SiPython key={2} className='w-[25px] h-[25px]' />,
-            <SiTensorflow key={1} className='w-[25px] h-[25px]' />,
-            <SiKeras key={3} className='w-[25px] h-[25px]' />,
-            <SiQt key={4} className='w-[25px] h-[25px]' />
+            <SiFacebook key={7} className='w-[25px] h-[25px]' />, 
           ],
-          link: 'https://github.com/Iorenantsoa/G_stage'
+          link: 'https://web.facebook.com/profile.php?id=100092687839134'
         },
-        {
-          title: 'G-stage',
-          path: '/Gstage (5).jpg',
-          description: "G-Stage is an application for managing internships, thesis defenses, and student supervision in academic institutions. Designed to facilitate coordination between students, supervisors, and administrators, the application allows for tracking the internship process from submission to the final defense. Students can submit their internship applications, view the details of their supervision, and schedule their thesis defenses, while supervisors and administrators can monitor project progress and approve various stages.",
-          technologies: [
-            <SiPhp key={3} className='w-[25px] h-[25px]' />,
-            <SiSymfony key={1} className='w-[25px] h-[25px]' />,
-            <SiJquery key={5} className='w-[25px] h-[25px]' />,
-            <SiBootstrap key={4} className='w-[25px] h-[25px]' />,
-            <SiMysql key={2} className='w-[25px] h-[25px]' />,
-          ],
-          link: 'https://github.com/Iorenantsoa/G_stage'
-        },
+         
         {
           title:
             'GasyCar',
@@ -111,6 +105,36 @@ const workSlides = {
           ],
           link: 'https://github.com/Iorenantsoa/'
         },
+        {
+          title: 'RenalScanAI',
+          path: '/RenalScanAI (1).jpg',
+          description: "RenalScanAI is an innovative application that uses artificial intelligence to detect and classify various kidney diseases from medical images. Developed to assist healthcare professionals in diagnosing renal conditions, the application relies on a convolutional neural network (CNN) model trained with TensorFlow Keras to analyze images and provide accurate predictions on four types of kidney diseases.",
+          technologies: [
+            <SiPython key={2} className='w-[25px] h-[25px]' />,
+            <SiTensorflow key={1} className='w-[25px] h-[25px]' />,
+            <SiKeras key={3} className='w-[25px] h-[25px]' />,
+            <SiQt key={4} className='w-[25px] h-[25px]' />
+          ],
+          link: 'https://github.com/Iorenantsoa/G_stage'
+        },
+      ],
+    },
+    {
+      images: [
+       {
+          title: 'G-stage',
+          path: '/Gstage (5).jpg',
+          description: "G-Stage is an application for managing internships, thesis defenses, and student supervision in academic institutions. Designed to facilitate coordination between students, supervisors, and administrators, the application allows for tracking the internship process from submission to the final defense. Students can submit their internship applications, view the details of their supervision, and schedule their thesis defenses, while supervisors and administrators can monitor project progress and approve various stages.",
+          technologies: [
+            <SiPhp key={3} className='w-[25px] h-[25px]' />,
+            <SiSymfony key={1} className='w-[25px] h-[25px]' />,
+            <SiJquery key={5} className='w-[25px] h-[25px]' />,
+            <SiBootstrap key={4} className='w-[25px] h-[25px]' />,
+            <SiMysql key={2} className='w-[25px] h-[25px]' />,
+          ],
+          link: 'https://github.com/Iorenantsoa/G_stage'
+        },
+        
       ],
     },
   ],

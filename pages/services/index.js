@@ -53,7 +53,8 @@ const Services = () => {
                 animate="show"
                 exit="hidden"
                 className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-slate-50  ">
-                My work revolves around developing software with an emphasis, on quality and innovation. Crafting web and mobile solutions that are customized to meet the unique requirements of our clients.
+                {/* My work revolves around developing software with an emphasis, on quality and innovation. Crafting web and mobile solutions that are customized to meet the unique requirements of our clients. */}
+                I combine my skills in development and digital marketing to deliver comprehensive solutions. Whether you need a high-performance website or a digital communication strategy, I help you achieve your business goals efficiently.
               </motion.p>
 
             </div>

@@ -9,6 +9,11 @@ import {
   FaGithub,
   FaGitAlt,
   FaAngular,
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaTiktok,
 } from "react-icons/fa";
 
 import {
@@ -28,7 +33,16 @@ import {
   SiMysql,
   SiPostgresql,
   SiMongodb,
-  SiSqlite
+  SiSqlite,
+  SiGoogleanalytics,
+  SiMailchimp,
+  SiHootsuite,
+  SiCanva,
+  SiBuffer,
+  SiGoogleads,
+  SiWordpress,
+  SiFlutter,
+  SiOpenai
 } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { TbBrandReactNative } from "react-icons/tb";
@@ -40,9 +54,83 @@ import { fadeIn } from '../../variants'
 
 //  data
 export const aboutData = [
+  // {
+  //   title: 'skills',
+  //   info: [
+  //     {
+  //       title: 'Web Development',
+  //       icons: [
+  //         <FaHtml5 key={0} />,
+  //         <FaCss3 key={1} />,
+  //         <RiJavascriptFill key={2} />,
+  //         <BiLogoTypescript key={3} />,
+  //         <FaReact key={4} />,
+  //         <FaAngular key={5} />,
+  //         <SiNextdotjs key={6} />,
+  //         <FaNode key={7} />,
+  //         <SiNestjs key={8} />,
+  //         <SiSymfony key={9} />,
+
+  //       ],
+  //     },
+  //     {
+  //       title: 'Mobile Development',
+  //       icons: [
+  //         <SiKotlin key={10} />,
+  //         <TbBrandReactNative key={11} />,
+  //         <SiExpo key={12} />,
+
+  //       ],
+  //     },
+  //     {
+  //       title: 'Artificial Intelligence (AI)',
+  //       icons: [
+  //         <SiPython key={13} />,
+  //         <SiNumpy key={14} />,
+  //         <SiPandas key={15} />,
+  //         <SiScikitlearn key={16} />,
+  //         <SiTensorflow key={17} />,
+  //         <SiKeras key={18} />,
+
+  //       ],
+  //     },
+
+  //     {
+  //       title: 'Databases',
+  //       icons: [<SiSqlite key={19} />, <SiPostgresql key={20} />, <SiMongodb key={21} />, <SiMysql key={22} />,],
+  //     },
+  //     {
+  //       title: 'Version Control',
+  //       icons: [<FaGitAlt key={23} />, <FaGithub key={24} />],
+  //     },
+  //     {
+  //       title: 'UI/UX Design',
+  //       icons: [<FaFigma key={25} />, <SiAdobexd key={62} />, <SiAdobephotoshop key={27} />],
+  //     },
+  //   ],
+  // },
+
   {
     title: 'skills',
     info: [
+      {
+        title: 'Digital Marketing',
+        icons: [
+          <FaFacebook key={13} />,
+          <FaTwitter key={14} />,
+          <FaInstagram key={15} />,
+          <FaLinkedin key={16} />,
+          <FaTiktok key={22}/>,
+          <SiGoogleanalytics key={17} />, 
+          <SiMailchimp key={19} />,
+          <SiHootsuite key={20} />,
+          <SiCanva key={52} />, 
+          <SiBuffer key={40} />,
+          <SiGoogleads key={54} />, 
+          <SiWordpress key={54} />, 
+
+        ],
+      },
       {
         title: 'Web Development',
         icons: [
@@ -56,6 +144,7 @@ export const aboutData = [
           <FaNode key={7} />,
           <SiNestjs key={8} />,
           <SiSymfony key={9} />,
+          <SiWordpress key={54} />, 
 
         ],
       },
@@ -65,40 +154,63 @@ export const aboutData = [
           <SiKotlin key={10} />,
           <TbBrandReactNative key={11} />,
           <SiExpo key={12} />,
-
+          <SiFlutter key={12} />,
         ],
       },
+      
       {
         title: 'Artificial Intelligence (AI)',
         icons: [
-          <SiPython key={13} />,
-          <SiNumpy key={14} />,
-          <SiPandas key={15} />,
-          <SiScikitlearn key={16} />,
-          <SiTensorflow key={17} />,
-          <SiKeras key={18} />,
-
+          <SiOpenai key={27} />,
+          <SiPython key={21} />,
+          <SiNumpy key={22} />,
+          <SiPandas key={23} />,
+          <SiScikitlearn key={24} />,
+          <SiTensorflow key={25} />,
+          <SiKeras key={26} />,
+          
         ],
       },
-
       {
         title: 'Databases',
-        icons: [<SiSqlite key={19} />, <SiPostgresql key={20} />, <SiMongodb key={21} />, <SiMysql key={22} />,],
+        icons: [
+          <SiSqlite key={27} />,
+          <SiPostgresql key={28} />,
+          <SiMongodb key={29} />,
+          <SiMysql key={30} />,
+        ],
       },
       {
         title: 'Version Control',
-        icons: [<FaGitAlt key={23} />, <FaGithub key={24} />],
+        icons: [
+          <FaGitAlt key={31} />,
+          <FaGithub key={32} />,
+        ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma key={25} />, <SiAdobexd key={62} />, <SiAdobephotoshop key={27} />],
+        icons: [
+          <FaFigma key={33} />,
+          <SiAdobexd key={34} />,
+          <SiAdobephotoshop key={35} />,
+        ],
       },
     ],
   },
-
+  
   {
     title: 'experience',
     info: [
+      {
+        title: 'WordPress Developer - Freelance',
+        school: 'Building and customizing WordPress websites for clients, ensuring optimal performance and user experience.',
+        stage: 'November 2024 - Present',
+      },
+      {
+        title: 'Web Designer - Freelance',
+        school: 'Designing responsive and user-friendly websites tailored to clients’ needs and brand identity.',
+        stage: 'November 2024 - Present',
+      },
       {
         title: 'Bachelor’s Project - IES-AV (Institut d’Enseignement Supérieur d’Antsirabe Vakinankaratra)',
         school: 'Developed an image classification model to detect kidney diseases using Convolutional Neural Networks (CNNs).',
@@ -114,6 +226,17 @@ export const aboutData = [
   {
     title: 'formations & credentials',
     info: [
+      {
+        title: 'Fundamentals of Communication',
+        school: 'Orange Digital Center',
+        stage: 'January 2025',
+      },
+      {
+        title: 'Digital Marketing',
+        school: 'Orange Digital Center',
+        stage: 'December 2024',
+      },
+      
       {
         title: 'First Year of Master’s in Software Engineering (M1)  ',
         school: 'IES-AV (Institut d’Enseignement Supérieur d’Antsirabe Vakinankaratra)',
@@ -181,8 +304,8 @@ const About = () => {
               exit="hidden"
             >
 
-              Passionate <br /> <span className='text-accent'>JavaScript </span> &  <span className='text-accent'> TypeScript</span><br /> Developer
-
+              {/* Passionate <br /> <span className='text-accent'>JavaScript </span> &  <span className='text-accent'> TypeScript</span><br /> Developer */}
+              Connecting <br /> <span className='text-accent'>Technology</span> & <span className='text-accent'>Strategy</span>
             </motion.h2>
             <motion.p
               variants={fadeIn('right', 0.4)}
@@ -190,8 +313,8 @@ const About = () => {
               animate="show"
               exit="hidden"
               className='max-w-[500] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-center xl:text-left '>
-              In my role, as a developer specializing in JavaScript and TypeScript technologies I prioritize crafting user sophisticated web solutions that deliver on client expectations while maintaining levels of performance and reliability.
-
+              {/* In my role, as a developer specializing in JavaScript and TypeScript technologies I prioritize crafting user sophisticated web solutions that deliver on client expectations while maintaining levels of performance and reliability. */}
+              In my role, as a developer and digital marketer specializing in JavaScript and TypeScript technologies, I focus on creating sophisticated web solutions that not only meet client expectations but also drive business growth through effective digital strategies, ensuring top performance and reliability.
             </motion.p>
             {/* counter */}
             <motion.div

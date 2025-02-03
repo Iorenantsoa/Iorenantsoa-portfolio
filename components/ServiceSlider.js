@@ -43,6 +43,37 @@ const serviceData = [
     title: 'SEO',
     description: 'Search engine optimization to enhance online visibility.',
   },
+  {
+  icon: <SiGoogleads />,
+  title: 'SEA (Search Engine Advertising)',
+  description: 'Managing paid campaigns on search engines to drive traffic and boost conversions.',
+},
+{
+  icon: <FaClipboard />,
+  title: 'Content Creation',
+  description: 'Creating engaging content for social media to enhance brand awareness and interaction.',
+},
+{
+  icon: <FaChartBar />,
+  title: 'Performance Analysis',
+  description: 'Optimizing digital campaigns to improve performance and maximize ROI.',
+},
+{
+  icon: <SiFacebook />,
+  title: 'Social Media Management',
+  description: 'Growing social media presence to strengthen brand visibility and community engagement.',
+},
+{
+  icon: <SiHootsuite />,
+  title: 'Social Media Strategy',
+  description: 'Developing strategies to boost social media reach and engagement.',
+},
+{
+  icon: <SiBuffer />,
+  title: 'Social Media Scheduling',
+  description: 'Scheduling posts to ensure consistent online presence and engagement.',
+},
+
 ];
 
 import 'swiper/css'
@@ -52,6 +83,8 @@ import 'swiper/css/pagination'
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper';
+import { FaChartBar, FaClipboard } from 'react-icons/fa';
+import { SiBuffer, SiFacebook, SiGoogleads, SiHootsuite } from 'react-icons/si';
 
 const ServiceSlider = () => {
   return (
