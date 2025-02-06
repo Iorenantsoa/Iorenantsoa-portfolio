@@ -42,7 +42,7 @@ const workSlides = {
         },
         {
           title: 'Sweetiiies',
-          path: '/sweetiiies.png',
+          path: '/Sweetiiies.png',
           description: "Facebook page dedicated to my poetry: sharing original creations and managing interaction with a community passionate about literature.",
           technologies: [
             <SiFacebook key={7} className='w-[25px] h-[25px]' />, 
